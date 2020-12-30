@@ -1,0 +1,8 @@
+<h2>Selected User</h2>
+
+<div *ngIf="user">
+    <span>Name: <input type="text" [(ngModel)]="user.name"></span>
+    <span>Active: {{user.active}}</span>
+
+    <button (click)="goBack()">Back</button>
+</div>
